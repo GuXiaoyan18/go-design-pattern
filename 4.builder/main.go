@@ -1,7 +1,5 @@
 package main
 
-import "github.com/gin-gonic/gin/ginS"
-
 // 建造者模式，将一个复杂对象的表示与构建分离，使得同样的构建过程可以构建不同的表示。
 // 建造者模式的四个部分，Builder：建造者，ConcreteBuilder：具体建造者，Director：指挥者，产品：Product
 
