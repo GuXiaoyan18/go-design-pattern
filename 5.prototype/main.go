@@ -34,6 +34,7 @@ func deepClone(dst, src interface{}) error {
 	return gob.NewDecoder(bytes.NewBuffer(buf.Bytes())).Decode(dst)
 }
 
+// 原型模式
 func main() {
 	s1 := &Student{
 		Name: "Jack",
