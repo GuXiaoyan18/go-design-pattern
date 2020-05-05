@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/gob"
+	"fmt"
 	"log"
 )
 
@@ -36,6 +37,15 @@ func deepClone(dst, src interface{}) error {
 
 // 原型模式
 func main() {
+	a := func (a uint32) uint32 {
+		a++
+		return a
+	}
+	b := uint32(2)
+	fmt.Println(a(b))
+	fmt.Println(a(b))
+
+
 	s1 := &Student{
 		Name: "Jack",
 		Age: 18,
