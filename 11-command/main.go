@@ -55,7 +55,7 @@ func NewInvoker(command1, command2 Command) *Invoker {
 	}
 }
 
-// 命令模式，调用顺序：调用用者->接受者->命令，实际上是将请求者和实现者解耦
+// 命令模式，调用顺序：调用命令者->接受者->命令，实际上是将请求者和实现者解耦
 func main() {
 	light := &Light{}
 
